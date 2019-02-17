@@ -1,23 +1,25 @@
 import React from "react";
 import "./Issue.css";
 
-const Avatar = ({ url }) => {
+const Avatar = ({ imageUrl, profileUrl }) => {
   // TODO move style to class
   return (
-    <span
-      style={{
-        backgroundColor: "#fafafa",
-        borderRadius: "3px",
-        height: "40px",
-        width: "40px",
-        boxSizing: "border-box",
-        display: "block",
-        overflow: "hidden",
-        position: "relative"
-      }}
-    >
-      <img src={url} alt="avatar" style={{ width: "100%", height: "auto" }} />
-    </span>
+    <a href={profileUrl}>
+      <span
+        style={{
+          backgroundColor: "#fafafa",
+          borderRadius: "3px",
+          height: "40px",
+          width: "40px",
+          boxSizing: "border-box",
+          display: "block",
+          overflow: "hidden",
+          position: "relative"
+        }}
+      >
+        <img src={imageUrl} alt="avatar" style={{ width: "100%", height: "auto" }} />
+      </span>
+    </a>
   );
 };
 
@@ -54,7 +56,10 @@ const Issue = ({ issue }) => (
   <div className="dc-card issue-card">
     <div className="inline-edit dc-row">
       <div className="dc-column dc-column--medium-1">
-        <Avatar url={issue.user.avatar_url} />
+        <Avatar
+          imageUrl={issue.user.avatar_url}
+          profileUrl={issue.user.html_url}
+        />
       </div>
       <div className="dc-column dc-column--medium-8">
         <p>
