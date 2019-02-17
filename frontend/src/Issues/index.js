@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 
 import Issue from "./Issue";
-import Loading from "./Loading";
-import Error from "../Error";
 
-const Empty = () => (
-  <div className="dc-card">There is no issues to show.</div>
-);
+const Empty = () => <div className="dc-card">There is no issues to show.</div>;
 
 const LoadMore = ({ load }) => (
   <div className="dc-card" onClick={load}>
@@ -14,10 +10,16 @@ const LoadMore = ({ load }) => (
   </div>
 );
 
-class Issues extends Component {
-  render() {
-    return <div> Issues </div>;
-  }
-}
+const Issues = ({ issues }) => {
+  return (
+    <div>
+      {issues && issues.length ? (
+        issues.map(issue => <Issue issue={issue} />)
+      ) : (
+        <Empty />
+      )}
+    </div>
+  );
+};
 
 export default Issues;
