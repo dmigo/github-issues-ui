@@ -3098,6 +3098,11 @@ dotenv@6.0.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.0.0.tgz#24e37c041741c5f4b25324958ebbc34bca965935"
   integrity sha512-FlWbnhgjtwD+uNLUGHbMykMOYQaTivdHEmYwAKFjn6GKe/CqY0fNae93ZHTd20snh9ZLr8mTzIL9m0APQ1pjQg==
 
+dress-code@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/dress-code/-/dress-code-2.4.0.tgz#cfe7590eb8f5a9dbaef722561a8f711a88ec91d1"
+  integrity sha512-Z69kh9o1EJEu+vhvZx30DAoUxpvqACIOws3r3vcIn7tCON8sesQPYIz80DoiWi2HHdeOcC+b8FFJcIvFBdctKA==
+
 duplexer@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
@@ -7840,7 +7845,7 @@ react-dev-utils@^7.0.3:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@16.8.1:
+react-dom@^16.8.1:
   version "16.8.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.1.tgz#ec860f98853d09d39bafd3a6f1e12389d283dbb4"
   integrity sha512-N74IZUrPt6UiDjXaO7UbDDFXeUXnVhZzeRLy/6iqqN1ipfjrhR60Bp5NuBK+rv3GMdqdIuwIl22u1SYwf330bg==
@@ -7915,7 +7920,7 @@ react-scripts@2.1.5:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.8.1:
+react@^16.8.1:
   version "16.8.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.1.tgz#ae11831f6cb2a05d58603a976afc8a558e852c4a"
   integrity sha512-wLw5CFGPdo7p/AgteFz7GblI2JPOos0+biSoxf1FPsGxWQZdN/pj6oToJs1crn61DL3Ln7mN86uZ4j74p31ELQ==
